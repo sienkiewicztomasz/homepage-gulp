@@ -376,6 +376,9 @@ html {
   text-align: center;
   color: aliceblue; }
 
+.input {
+  width: 220px; }
+
 .main {
   display: -ms-grid;
   display: grid;
@@ -387,6 +390,21 @@ html {
   grid-row-gap: 16px;
   margin: 32px auto;
   width: 100%; }
+  .main__form {
+    background: -webkit-gradient(linear, left top, right top, from(#00C9FF), to(#92FE9D));
+    background: -webkit-linear-gradient(left, #00C9FF 0%, #92FE9D 100%);
+    background: -o-linear-gradient(left, #00C9FF 0%, #92FE9D 100%);
+    background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    min-height: 100vh; }
 
 @media (max-width: 640px) {
   .main {

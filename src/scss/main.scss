@@ -74,6 +74,10 @@ html {
   color: aliceblue;
 }
 
+.input {
+  width: 220px;
+}
+
 .main {
   display: grid;
   grid-template-areas: "header header"
@@ -85,6 +89,13 @@ html {
   grid-row-gap: 16px;
   margin: 32px auto;
   width: 100%;
+  &__form {
+    background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
 }
 
 @media (max-width: 640px) {
