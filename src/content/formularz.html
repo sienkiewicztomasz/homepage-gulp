@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html class="html" lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formularz</title>
+    <link href="css/formstyle.css" rel="stylesheet" type="text/css">
+</head>
+<body class="body">
+    <main class="main">
+        <form class="form" action="http://dev.cotenfrontend.pl" method="POST">
+            <p>
+                <label class="label" for="name">Twoje imię:</label><br>
+                    <input name="name" required value="Tomek" placeholder="Tu wpisz swoje imię" id="name">
+            </p>
+            <p>
+                <label class="label" for="surname">Twoje nazwisko:</label><br>
+                    <input name="surname" required placeholder="Tu wpisz swoje nazwisko" id="surname">
+            </p>
+            <p>
+                <label class="label" for="age">Wiek:</label><br>
+                    <input type="number" name="age" value="40" placeholder="Tu wpisz swój wiek" id="age">
+            </p>
+            <p>
+                <label class="label" for="email">Email</label><br>
+                    <input type="email" name="email" placeholder="Tu wpisz swój adres email" id="email">
+            </p>
+            <p>
+                <label class="label" for="tel">Numer telefonu</label><br>
+                    <input type="tel" name="tel" placeholder="Tu wpisz swój numer telefonu" id="tel">
+            </p>
+            <p>
+                <label class="label" for="password">Hasło</label><br>
+                    <input type="password" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" name="password" placeholder="Tu wpisz hasło" id="password">
+            </p>
+            <p>
+                <label class="label" for="repeatPassword">Powtórz hasło</label><br>
+                    <input type="password" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" name="repeatPassword" placeholder="Tu wpisz hasło" id="repeatPassword">
+            </p>
+            <p>
+                <label class="label" for="file">Twój awatar</label><br>
+                    <input type="file" name="file" placeholder="Tu wpisz hasło" id="file">
+            </p>
+            <fieldset class="fieldset">
+                <legend class="legend">Płeć</legend>
+                <p>
+                    <input type="radio" name="radio" id="radio1">
+                    <label for="radio1">Mężczyzna</label>
+                </p>
+                <p>
+                    <input type="radio" name="radio" id="radio2">
+                    <label for="radio2">Kobieta</label>
+                </p>
+            </fieldset>
+            <p>
+                <input type="submit" value="Zatwierdź">
+            </p>
+        </form>
+    </main>
+</body>
+</html>

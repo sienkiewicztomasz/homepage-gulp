@@ -1,7 +1,6 @@
 @import "_normalize";
 @import "_variables";
 
-
 html {
   box-sizing: border-box;
 }
@@ -10,7 +9,154 @@ html {
   box-sizing: inherit;
 }
 
-body {
-  color: $yellow;
-  background: $violet;
+.body {
+  background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+  color: #333;
+}
+
+.about {
+  grid-area: about;
+}
+
+.about__header {
+  color: #232627;
+}
+
+.about__paragraph {
+  border: 3px double #1A936F;
+  padding: 16px;
+}
+
+.article {
+  background-color: #1A936F;
+}
+
+.article__img {
+  image-resolution: 120px 120px;
+}
+
+.article__header {
+  color: darkslateblue;
+}
+
+.article__paragraph {
+  border: 4px dotted #333;
+  color: darkmagenta;
+  padding: 16px;
+}
+
+.content {
+  grid-area: content;
+}
+
+.diary__header {
+  color: #d81717;
+}
+
+.footer{
+  grid-area: footer;
+}
+
+.header {
+  grid-area: header;
+}
+
+.header__button{
+  grid-area: button;
+}
+
+.header__title {
+  background-color: #87c0cd;
+  color: #1d2bac;
+  text-align: center;
+}
+
+.header__title--red {
+  color: darkred;
+}
+
+.href {
+  text-align: center;
+  color: aliceblue;
+}
+
+.main {
+  display: grid;
+  grid-template-areas: "header header"
+  "button button"
+  "grid content"
+  "footer footer";
+  grid-template-columns: 200px 1fr;
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+  margin: 32px auto;
+  width: 100%;
+}
+
+@media (max-width: 640px) {
+  .main {
+      grid-template-areas: "header"
+      "button"
+      "about"
+      "content"
+      "footer";
+      grid-template-columns: 1fr;
+  }
+}
+
+.navigation {
+  background-color: chartreuse;
+  text-align: center;
+}
+
+.navigation__link {
+  color: #1A936F;
+}
+
+.navigation__list {
+  /* align-items: center; */
+  display: flex;
+  /* height: 60px; */
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+
+@media (max-width: 400px) {
+  .navigation__list {
+      flex-direction: column;
+      display: none;
+  }
+  .navigation__item {
+      margin: 16px;
+  }
+  .navigation__list--visible {
+      display: flex;
+  }
+  .navigation__switcher {
+      border: none;
+      background: none;
+  }
+}
+
+@media (min-width: 401px) {
+  .navigation__switcher {
+      display: none;
+  }
+}
+
+.navigation__item {
+  display: block;
+  margin: 0 16px;
+}
+
+.site__header {
+  background: #fff;
+  box-sizing: border-box;
+  left: 0;
+  padding: 16px;
+  position: relative;
+  top: 0;
+  width: 100%;
+  z-index: 10;
 }
