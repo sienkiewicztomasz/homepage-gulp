@@ -316,10 +316,10 @@ html {
           box-sizing: inherit; }
 
 .body {
-  background: -webkit-gradient(linear, left top, right top, from(#00C9FF), to(#92FE9D));
-  background: -webkit-linear-gradient(left, #00C9FF 0%, #92FE9D 100%);
-  background: -o-linear-gradient(left, #00C9FF 0%, #92FE9D 100%);
-  background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+  background-image: -webkit-gradient(linear, left bottom, right top, from(#a80d65), color-stop(#9a1974), color-stop(#872481), color-stop(#712f8b), color-stop(#543793), color-stop(#763797), color-stop(#943597), color-stop(#b13495), color-stop(#f23c72), color-stop(#ff7042), color-stop(#ffb000), to(#cfed0c));
+  background-image: -webkit-linear-gradient(left bottom, #a80d65, #9a1974, #872481, #712f8b, #543793, #763797, #943597, #b13495, #f23c72, #ff7042, #ffb000, #cfed0c);
+  background-image: -o-linear-gradient(left bottom, #a80d65, #9a1974, #872481, #712f8b, #543793, #763797, #943597, #b13495, #f23c72, #ff7042, #ffb000, #cfed0c);
+  background-image: linear-gradient(to right top, #a80d65, #9a1974, #872481, #712f8b, #543793, #763797, #943597, #b13495, #f23c72, #ff7042, #ffb000, #cfed0c);
   color: #333; }
 
 .about {
